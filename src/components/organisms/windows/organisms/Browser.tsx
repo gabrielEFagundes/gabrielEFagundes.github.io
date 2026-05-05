@@ -1,7 +1,7 @@
 import Image from "next/image";
-import SearchBar from "./molecules/SearchBar";
-import archSynth from '../../../../public/synthwave.jpg';
-import ProjectCard from "./organisms/ProjectCard";
+import SearchBar from "../molecules/SearchBar";
+import archSynth from '../../../../../public/synthwave.jpg'
+import ProjectCard from "../molecules/ProjectCard";
 
 export default function Browser(){
     return (
@@ -31,15 +31,15 @@ export default function Browser(){
                                 <li>Game Modding</li>
                                 <li>Ray Tracing Mathematics</li>
                                 <li>Computer Science in General</li>
-                                <li>Learning stuff</li>
+                                <li>Learning new stuff</li>
                             </ul>
                         </div>
                     </div>
                     <div>
                         <h2 className="text-purple-500 text-center font-bold italic text-xl mt-4">My Projects</h2>
-                        <div className="grid grid-cols-3 gap-2 mt-5">
+                        <div className="grid grid-cols-3 gap-4 mt-5">
                             <ProjectCard title="Feelytics" 
-                                        desc="A brazillian dashboards platform designed to group data in one place." 
+                                        desc="A dashboards platform designed to group data in one place." 
                                         language="Vue"
                                         color="#41b883"
                                         link="https://github.com/gabrielEFagundes/Feelytics" />
@@ -55,6 +55,7 @@ export default function Browser(){
                                         link="https://github.com/gabrielEFagundes/silk" />
                         </div>
                     </div>
+                    <p className="text-sm mt-10">I have to enhance this design lmao</p>
                 </div>
             </div>
         </section>
