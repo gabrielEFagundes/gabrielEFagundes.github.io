@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --cursor: url("/public/cursor/Arrow.svg");
+  --cursor: url("/public/cursor/Pointing hand.svg");
 }
 
 @theme inline {
@@ -23,5 +23,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-fira);
-  cursor: var(--cursor), auto;
+  cursor: var(--cursor), 0, 0;
 }
