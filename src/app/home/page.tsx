@@ -11,6 +11,9 @@ import { useState } from "react"
 import Window from "@/components/organisms/windows/Window";
 import Browser from "@/components/organisms/windows/organisms/Browser";
 import Terminal from "@/components/organisms/windows/organisms/Terminal";
+import VisualStudio from "@/components/organisms/windows/organisms/VisualStudio";
+import bgImage from '../../../public/wallpaper.png';
+import Image from "next/image";
 
 export default function Page(){
     const [activeWindow, setActiveWindow] = useState("");
@@ -32,6 +35,9 @@ export default function Page(){
                 </Window>
                 <Window id="browser" activeId={activeWindow}>
                     <Browser />
+                </Window>
+                <Window id="vscode" activeId={activeWindow}>
+                    <VisualStudio />
                 </Window>
                 
                 <div className="flex justify-center items-center">
